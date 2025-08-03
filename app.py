@@ -32,7 +32,7 @@ if zip_input:
     filtered = filtered[
         filtered["zip"].astype(str).str.contains(zip_input_lower) |
         filtered["city"].str.lower().str.contains(zip_input_lower) |
-        filtered["state"].str.lower().str.contains(zip_input_lower)
+        filtered["state_id"].str.lower().str.contains(zip_input_lower)
     ]
 
 # Display results
