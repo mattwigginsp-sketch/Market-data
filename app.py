@@ -30,7 +30,7 @@ filtered = df[
 if zip_input:
     zip_input_lower = zip_input.lower()
     filtered = filtered[
-        filtered["ZIP Code"].astype(str).str.contains(zip_input_lower) |
+        filtered["ZIP"].astype(str).str.contains(zip_input_lower) |
         filtered["City"].str.lower().str.contains(zip_input_lower) |
         filtered["State"].str.lower().str.contains(zip_input_lower)
     ]
